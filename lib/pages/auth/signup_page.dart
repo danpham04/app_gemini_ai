@@ -1,7 +1,7 @@
 import 'package:animate_do/animate_do.dart';
-import 'package:app_gemin_ai/global/app_icon.dart';
-import 'package:app_gemin_ai/global/app_paths.dart';
-import 'package:app_gemin_ai/global/app_router.dart';
+import 'package:app_gemin_ai/global/config/app_icon.dart';
+import 'package:app_gemin_ai/global/config/app_paths.dart';
+import 'package:app_gemin_ai/global/router/app_router.dart';
 import 'package:app_gemin_ai/pages/auth/widgets/custom_fade_text.dart';
 import 'package:app_gemin_ai/pages/auth/widgets/custom_fedein_img.dart';
 import 'package:app_gemin_ai/provider/provider_auth.dart';
@@ -153,7 +153,12 @@ class _SignupPageState extends State<SignupPage> {
                   FadeInUp(
                     duration: const Duration(milliseconds: 1900),
                     child: MaterialButton(
-                      onPressed: () {},
+                      onPressed: () async {
+                        await controller.signUp();
+                        if (controller.isSignUp) {
+                          Navigator.pop(context);
+                        }
+                      },
                       color: const Color.fromRGBO(49, 39, 79, 1),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(50),
@@ -176,7 +181,7 @@ class _SignupPageState extends State<SignupPage> {
                       duration: const Duration(milliseconds: 2000),
                       color: const Color.fromRGBO(49, 39, 79, .6),
                       onPressed: () {
-                        Navigator.of(context).pushNamed(AppRoutes.login);
+                        Navigator.pop(context);
                       },
                     ),
                   ),

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "782629308988",
+    "project_id": "learngetx-33158",
+    "storage_bucket": "learngetx-33158.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:782629308988:android:260401373ba3068f9c1139",
+        "android_client_info": {
+          "package_name": "com.example.app_gemin_ai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSJg-qOGkl8GNhzSIsIwZEzqf2I7VHk9M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:782629308988:android:1e6ba5fc5b0cb1fe9c1139",
+        "android_client_info": {
+          "package_name": "com.example.learn_getx"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSJg-qOGkl8GNhzSIsIwZEzqf2I7VHk9M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

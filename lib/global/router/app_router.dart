@@ -1,5 +1,6 @@
 import 'package:app_gemin_ai/pages/auth/login_page.dart';
 import 'package:app_gemin_ai/pages/auth/signup_page.dart';
+import 'package:app_gemin_ai/singleton/startup/on_boarding.dart';
 import 'package:flutter/material.dart';
 
 class AppRoutes {
@@ -20,6 +21,8 @@ class AppRoutes {
         return const LoginPage();
       case signup:
         return const SignupPage();
+      case onBoading:
+        return const Onboarding();
       default:
         throw 'Route  $routeName is not define';
     }
@@ -28,4 +31,5 @@ class AppRoutes {
   // define named Routes
   static const String login = '/';
   static const String signup = '/signup-login';
+  static const String onBoading = '/on_boading';
 }
